@@ -59,8 +59,8 @@ public class BasicConfig extends GridPane {
         }
 
         this.getStyleClass().add("basic-config");
-        this.getStylesheets().add(Paths.get("res/material.css").toAbsolutePath().toUri().toString());
-        this.getStylesheets().add(Paths.get("res/custom.css").toAbsolutePath().toUri().toString());
+        this.getStylesheets().add("/material.css");
+        this.getStylesheets().add("/custom.css");
     }
 
     private void setupGui() {

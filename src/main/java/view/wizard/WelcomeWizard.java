@@ -60,12 +60,12 @@ public class WelcomeWizard extends GridPane {
                 Stage editorStage = new Stage();
                 editorStage.setTitle("Lipi Post Editor");
                 TabbedHMDPostEditor t = new TabbedHMDPostEditor(editorStage);
-                t.getStylesheets().add(Paths.get("res/material.css").toAbsolutePath().toUri().toString());
-                t.getStylesheets().add(Paths.get("res/custom.css").toAbsolutePath().toUri().toString());
+                t.getStylesheets().add("/material.css");
+                t.getStylesheets().add("/custom.css");
                 editorStage.setScene(new Scene(t));
 
                 editorStage.getIcons().add(
-                        new Image(Paths.get("res/lipi-hmdeditor-icon.png").toAbsolutePath().toUri().toString())
+                        new Image("/lipi-hmdeditor-icon.png")
                 );
 
                 DashboardMain mainDashboard = new DashboardMain(selectedDirPath, t);
@@ -75,8 +75,8 @@ public class WelcomeWizard extends GridPane {
                 holder.setMinWidth(1000);
                 holder.getChildren().add(mainDashboard);
 
-                holder.getStylesheets().add(Paths.get("res/material.css").toAbsolutePath().toUri().toString());
-                holder.getStylesheets().add(Paths.get("res/custom.css").toAbsolutePath().toUri().toString());
+                holder.getStylesheets().add("/material.css");
+                holder.getStylesheets().add("/custom.css");
 
                 Scene scene = new Scene(holder);
 

@@ -53,11 +53,11 @@ public class Lipi extends Application {
 
         wizPane = new VBox();
 
-        wizPane.getStylesheets().add(Paths.get("res/material.css").toAbsolutePath().toUri().toString());
-        wizPane.getStylesheets().add(Paths.get("res/custom.css").toAbsolutePath().toUri().toString());
+        wizPane.getStylesheets().add("/material.css");
+        wizPane.getStylesheets().add("/custom.css");
 
         primaryStage.getIcons().add(
-                new Image(Paths.get("res/lipi-icon.png").toAbsolutePath().toUri().toString())
+                new Image("/lipi-icon.png")
         );
     }
 
